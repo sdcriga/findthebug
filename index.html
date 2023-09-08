@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find the Bag</title>
+  <title>Little Alchemy</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Test page</h1>
-    </header>
+  <h1>Little Alchemy</h1>
+  <p>Перетаскивайте элементы, чтобы создавать новые вещи.</p>
+
+  <div id="container">
+    <div id="elements">
+      <div class="element" draggable="true" id="fire">Огонь</div>
+      <div class="element" draggable="true" id="water">Вода</div>
+      <div class="element" draggable="true" id="earth">Земля</div>
+      <div class="element" draggable="true" id="air">Воздух</div>
+      <div class="element" draggable="true" id="zeka" disabled>zeka</div>
+    </div>
+    <ul id="result"></ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
