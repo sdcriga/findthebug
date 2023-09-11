@@ -1,6 +1,7 @@
 const elements = document.querySelectorAll('.element');
 const result = document.getElementById('result');
 
+
 elements.forEach(element => {
   element.addEventListener('dragstart', (e) => {
     e.dataTransfer.setData('text/plain', e.target.id);
