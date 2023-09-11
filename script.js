@@ -1,13 +1,6 @@
 const elements = document.querySelectorAll('.element');
 const result = document.getElementById('result');
 
-const database = {
-  steam: ['fire', 'water'],
-  dust: ['air', 'earth'],
-  lava: ['fire', 'earth'],
-  mud: ['water', 'earth'],
-};
-
 elements.forEach(element => {
   element.addEventListener('dragstart', (e) => {
     e.dataTransfer.setData('text/plain', e.target.id);
@@ -54,20 +47,18 @@ function checkCombination() {
       }
 
       if (isMatch) {
-        // Очищаем результат и добавляем новый элемент
         result.innerHTML = '';
-
-        const newElement = document.createElement('div');
-        newElement.className = 'element';
-        newElement.draggable = true;
-        newElement.id = 'air';
-        newElement.textContent = elementName;
-
-        const elementsContainer = document.getElementById('elements');
-        elementsContainer.appendChild(newElement);
-
+        const item = document.getElementById(elementName);
+        if (item.getAttribute("disabled")) {
+          alert('you have already created')
+        } else {
+          item.removeAttribute("disabled");
+        }
+       
         break;
       }
     }
   }
 }
+console.log('%cYou are in right place.', 'font-size: 18px; color: orange;');
+console.log('%creview sources to find answer ;) ', 'font-size: 14px; color: orange;');
