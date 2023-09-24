@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Mooli', sans-serif;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.element {
+    width: 50%;
+    border: 1px solid lightgray;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 3px ;
+}
+
+.element__combination {
+    background-color: #6200ff;
+    border-radius: 50px;
+    color: white;
+    width: 30px;
+    padding: 0 6px;
+    font-size: 15px;
+}
+ 
+
+
+  #result {
+    border-radius: 30px;
+    margin: 0;
+    margin-left: 10px;
+    border: 1px solid #dcdcdc;
+    background-color: lightgray;
+    background: repeating-linear-gradient( 
+        315deg,
+      white 0px,
+      white 10px,
+      #dcdcdc 10px, 
+      #dcdcdc 20px
+    );
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  .element[disabled] {
+      display: none
+  }
+
+ul {
+  list-style: none;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      background-color: #6200ff;
+  }
+  to {
+      opacity: 1;
+      background-color: white;
+  }
+}
+
+.animated {
+  animation: fadeIn .5s ease;
+  opacity: 1;
+}
+
+#showAll {
+    display: none;
+    /* Lets try to enabled it  */
+}
+
+.main__area li {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}

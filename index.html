@@ -1,46 +1,69 @@
 <!DOCTYPE html>
+<!-- 
+-------------------------------------------------------------    
+    O I am sorry my code is not perfect,
+    But if you take closer maybe you find() correct answer
+-------------------------------------------------------------   
+-->
 <html>
 <head>
-  <title>Dev Alchemy</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Swisscom Dev Alchemy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div id="container">
-    <button id="openModalBtn">Open Modal</button>
-    
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeModalBtn">&times;</span>
-            <h1>Hey</h1>
-            <p>Do you know something about browsers DEV tools ;)</p>
-            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezL3dTgA0KbuDLpoP1cFL2R4K4cd14H4Yjq22_afBUYyLaEQ/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe> -->
-        </div>
-    </div>
-
-    <div id="modalHint" class="modal">
+  <button id="openModal1">Open Modal1</button>
+  <button id="openModal2">Open Modal2</button>
+  
+  <div id="modal" class="modal">
       <div class="modal-content">
-          <span class="close" id="closeModalBtn">&times;</span>
-          <p>Have you hear about dev tools ;)</p>
+          <span class="close" id="closeModalBtn1">&times;</span>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezL3dTgA0KbuDLpoP1cFL2R4K4cd14H4Yjq22_afBUYyLaEQ/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
       </div>
   </div>
 
-
-    <h1>Dev Alchemy</h1>
-    <p>Drag element to create new one.</p>
-    <p>find as many as you can</p>
-    <ul id="result"></ul>
-    <div id="elements">
-      <div class="element" draggable="true" id="browser">browser</div>
-      <div class="element" draggable="true" id="code">code</div>
-      <div class="element" draggable="true" id="server">server</div>
-      <div class="element" draggable="true" id="student">student</div>
-      <div class="element" draggable="true" id="frontend" disabled>frontend</div>
-      <div class="element" draggable="true" id="backend" disabled>backend</div>
+  <div id="modalHint" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn2">&times;</span>
+        <p>Have you hear something about<br>DEV TOOLS ;)</p>
     </div>
   </div>
-  <script src="combinations.js"></script>
-  <script src="script.js"></script>
-  <script src="modal.js"></script>
+
+
+    <div id="container">
+        <img src="Swisscom_Logo.svg" alt="" srcset="" width="100px">
+        <h1>Dev Alchemy</h1>
+        <p>Drag and drop elements to create new one.<br>
+        <small>Find as many items as you can</small></p>
+        <div class="panel">
+            <button id="showAll">Show all </button>
+            <h3>You found <span id="total">0</span> </h3>
+        </div>
+        <div class="main">
+            <div id="elements" class="main__elements">
+<!-- 
+    Wow 
+    Good place for searching.
+    But this is not correct one.
+-->
+            </div>
+            <ul id="result" class="main__area"></ul>
+        </div>
+    </div>
+  <script src="assets/js/items.js"></script>
+  <script src="assets/js/loadItems.js"></script>
+  <script src="assets/js/combinations.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/consoleMessages.js"></script>
+  <script src="assets/js/modal.js"></script>
 
 </body>
 </html>
+<!-- 
+-------------------------------------------------------------    
+    O I am sorry my code is not perfect,
+    But if you take closer maybe you find() correct answer
+-------------------------------------------------------------   
+-->
