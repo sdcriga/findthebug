@@ -92,3 +92,9 @@ ul {
   cursor: pointer;
   animation: fadeIn 1.5s ease infinite;
 }
+
+
+#openModal1,
+#openModal2 {
+  display: none;
+}

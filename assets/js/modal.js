@@ -20,4 +20,4 @@ document.getElementById("closeSwisscom").addEventListener("click", () => {toggle
 toggleModal("modal");
 setTimeout(() => {
     toggleModal("modalHint");
-  }, 35000);
+  }, 25000);
