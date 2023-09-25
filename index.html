@@ -14,24 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <button id="openModal1">Open Modal1</button>
-  <button id="openModal2">Open Modal2</button>
+  <!-- <button id="openModal1">Open Modal1</button>
+  <button id="openModal2">Open Modal2</button> -->
   
-  <div id="modal" class="modal">
-      <div class="modal-content">
-          <span class="close" id="closeModalBtn1">&times;</span>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezL3dTgA0KbuDLpoP1cFL2R4K4cd14H4Yjq22_afBUYyLaEQ/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-      </div>
-  </div>
-
-  <div id="modalHint" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeModalBtn2">&times;</span>
-        <p>Have you hear something about<br>DEV TOOLS ;)</p>
-    </div>
-  </div>
-
-
     <div id="container">
         <img src="Swisscom_Logo.svg" alt="" srcset="" width="100px">
         <h1>Dev Alchemy</h1>
@@ -47,18 +32,41 @@
     Wow 
     Good place for searching.
     But this is not correct one.
+    Take look into sources
 -->
             </div>
             <ul id="result" class="main__area"></ul>
         </div>
     </div>
-  <script src="assets/js/items.js"></script>
-  <script src="assets/js/loadItems.js"></script>
-  <script src="assets/js/combinations.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/consoleMessages.js"></script>
-  <script src="assets/js/modal.js"></script>
 
+<!-- Modals -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn1">&times;</span>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezL3dTgA0KbuDLpoP1cFL2R4K4cd14H4Yjq22_afBUYyLaEQ/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+        </div>
+    </div>
+  
+    <div id="modalHint" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeModalBtn2">&times;</span>
+          <p>Have you hear something about<br>DEV TOOLS ;)</p>
+      </div>
+    </div>
+
+    <div id="swisscom" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSwisscom">&times;</span>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezL3dTgA0KbuDLpoP1cFL2R4K4cd14H4Yjq22_afBUYyLaEQ/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+        </div>
+    </div>
+<!-- /Modals -->
+    <script src="assets/js/items.js"></script>
+    <script src="assets/js/loadItems.js"></script>
+    <script src="assets/js/combinations.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/consoleMessages.js"></script>
+    <script src="assets/js/modal.js"></script>
 </body>
 </html>
 <!-- 

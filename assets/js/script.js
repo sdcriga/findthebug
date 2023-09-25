@@ -9,7 +9,7 @@ elements.forEach(element => {
 });
 
 result.addEventListener('dragover', (e) => {
-  e.preventDefault();
+    e.preventDefault();
 });
 
 result.addEventListener('drop', (e) => {
@@ -25,14 +25,14 @@ result.addEventListener('drop', (e) => {
 });
 
 
-function updateTotalCouner() {
-  const elements        = document.querySelectorAll('.element');
-  const totalElement    = document.getElementById('total');
-  const enabledElements = Array.from(elements).filter(element => !element.hasAttribute('disabled'));
-  totalElement.innerHTML = enabledElements.length;
+let updateTotalCouner = () => {
+    const elements        = document.querySelectorAll('.element');
+    const totalElement    = document.getElementById('total');
+    const enabledElements = Array.from(elements).filter(element => !element.hasAttribute('disabled'));
+    totalElement.innerHTML = enabledElements.length;
 }
 
-function updateCounter(sortedCombination) {
+let updateCounter = (sortedCombination) => {
     sortedCombination.forEach(combinationItem => {
         let browserElement = document.getElementById(combinationItem);
         let combinationElement = browserElement.querySelector(".element__combination");
@@ -46,7 +46,7 @@ function updateCounter(sortedCombination) {
     });
 }
 
-function checkCombination() {
+let checkCombination = () => {
   const combination = Array.from(result.children).map(item => item.id);
 
   for (const elementName in database) {
@@ -86,7 +86,6 @@ function checkCombination() {
 
 updateTotalCouner();
 
-
 let showAllButton = document.getElementById('showAll');
 showAllButton.addEventListener('click', function(e) {
   let a = document.querySelectorAll('.element');
@@ -94,11 +93,16 @@ showAllButton.addEventListener('click', function(e) {
     element.removeAttribute("disabled");
  
   });
-  alert('nice try but its also not correct!')
+  alert(`
+    nice try but its also not correct!,
+    review Swisscom element
+  `)
 });
 
 function find() {
   alert(
 `No no no it would be too easy 
-take look closer maybe you will find something 
+take look closer maybe you will find something.
+
+id="elements" is perfect place to start
 `);} 

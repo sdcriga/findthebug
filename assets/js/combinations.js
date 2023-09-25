@@ -1,5 +1,10 @@
+// IMPRESIVE
+// you can calculate all items 
+// or write in database items.length
+// to make it faster
 
-
+// BUT IT IS NOT what we are looking for 
+// check items.js file 
 const database = {
     frontend:   ['browser', 'code'],
     backend:    ['server', 'code'],
@@ -12,8 +17,5 @@ const database = {
     recruiter:  ['research', 'developer'],
     error:      ['bug', 'code'],
     team:       ['developer', 'developer'],
-    team:       ['student', 'student'],
-    data_center:['server', 'server']
+    data_center:['server', 'server'],
   };
-// sorry but 149 is not correct 
-// check style.css in 149 line ;)
