@@ -17,7 +17,11 @@ result.addEventListener('drop', (e) => {
     const elementId = e.dataTransfer.getData('text/plain');
     const element = document.getElementById(elementId);
     const listItem = document.createElement('li');
-    listItem.textContent = element.textContent;
+    let drawText = element.innerText;
+    let elementText = drawText.split(' ');
+    elementText.shift();
+
+    listItem.textContent = elementText.join(' ');
     listItem.id = elementId;
     result.appendChild(listItem);
 
