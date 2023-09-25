@@ -98,8 +98,8 @@ showAllButton.addEventListener('click', function(e) {
  
   });
   alert(`
-    nice try but its also not correct!,
-    review Swisscom element
+    nice try, but its also not correct!,
+    try to click Swisscom element
   `)
 });
 

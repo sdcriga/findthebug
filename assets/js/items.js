@@ -1,10 +1,8 @@
 // GOOD
-// you can calculate all items 
-// or write in console items.length
-// to make it faster
 
 // BUT IT IS NOT what we are looking for 
-// use this number to find line in style.css code 
+// calculate all items
+// and use this number to find line in style.css code 
 let items = [
     {title: 'student', combination: '4',   initial: true },
     {title: 'code',    combination: '4',    initial: true },

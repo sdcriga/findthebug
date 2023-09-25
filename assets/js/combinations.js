@@ -1,7 +1,4 @@
 // IMPRESIVE
-// you can calculate all items 
-// or write in database items.length
-// to make it faster
 
 // BUT IT IS NOT what we are looking for 
 // check items.js file 
