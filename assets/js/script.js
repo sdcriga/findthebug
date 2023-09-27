@@ -34,6 +34,9 @@ let updateTotalCouner = () => {
     const totalElement    = document.getElementById('total');
     const enabledElements = Array.from(elements).filter(element => !element.hasAttribute('disabled'));
     totalElement.innerHTML = enabledElements.length;
+    if (enabledElements.length == 8) {
+        toggleModal("modalHint");
+    }
 }
 
 let updateCounter = (sortedCombination) => {
@@ -43,11 +46,29 @@ let updateCounter = (sortedCombination) => {
         let currentValue = parseInt(combinationElement.textContent);
         if (!isNaN(currentValue)) {
             let newValue = currentValue - 1;
-            combinationElement.textContent = newValue;
+            if (newValue === 0) {
+                combinationElement.style.display = "none";
+                browserElement.classList.add("done");
+            } else {
+                combinationElement.textContent = newValue;
+            }
         } else {
             console.log("Elemen have NAN");
         }
     });
+}
+
+const openSwisscomModal = () => {
+    debugger;
+    // -----------------------------
+    // Unfortunately, I didn't have enough time to finish the necessary code.
+    //
+    // Perhaps you will be able to complete it.
+    //
+    // We need somehow call proper function.
+    // Check modal.js. There is only one function that we can use
+    // Use "swisscom" as a parameter to execute the final step.
+    // -----------------------------
 }
 
 let checkCombination = () => {
@@ -98,7 +119,7 @@ showAllButton.addEventListener('click', function(e) {
  
   });
   alert(`
-    nice try, but its also not correct!,
+    Nice try,
     try to click Swisscom element
   `)
 });
@@ -106,7 +127,7 @@ showAllButton.addEventListener('click', function(e) {
 function find() {
   alert(
 `No no no it would be too easy 
-take look closer maybe you will find something.
+take a closer look and maybe you will find something.
 
 id="elements" is perfect place to start
 `);} 

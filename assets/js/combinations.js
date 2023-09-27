@@ -1,4 +1,4 @@
-// IMPRESIVE
+// IMPRESSIVE
 
 // BUT IT IS NOT what we are looking for 
 // check items.js file 

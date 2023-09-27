@@ -1,15 +1,14 @@
 // GOOD
-
 // BUT IT IS NOT what we are looking for 
-// calculate all items
-// and use this number to find line in style.css code 
+// calculate all items and use this number to find line in style.css code 
+ 
 let items = [
-    {title: 'student', combination: '4',   initial: true },
-    {title: 'code',    combination: '4',    initial: true },
+    {title: 'student', combination: '2',   initial: true },
+    {title: 'code',    combination: '5',    initial: true },
     {title: 'coffee',  combination: '1', initial: true },
     {title: 'server',  combination: '3',  initial: true },
     {title: 'browser', combination: '3', initial: true },
-    {title: 'developer',    combination: '2',   initial: false },
+    {title: 'developer',    combination: '3',   initial: false },
     {title: 'frontend',     combination: '1',   initial: false },
     {title: 'backend',      combination: '1',    initial: false },
     {title: 'webpage',      combination: '0',   initial: false },

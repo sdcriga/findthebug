@@ -91,9 +91,12 @@ ul {
 #Swisscom {
   cursor: pointer;
   animation: fadeIn 1.5s ease infinite;
+  text-decoration: none
 }
 
-
+.done {
+  text-decoration: line-through;
+}
 #openModal1,
 #openModal2 {
   display: none;
