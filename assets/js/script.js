@@ -34,7 +34,7 @@ let updateTotalCouner = () => {
     const totalElement    = document.getElementById('total');
     const enabledElements = Array.from(elements).filter(element => !element.hasAttribute('disabled'));
     totalElement.innerHTML = enabledElements.length;
-    if (enabledElements.length == 8) {
+    if (enabledElements.length == 7) {
         toggleModal("modalHint");
     }
 }
